@@ -57,7 +57,7 @@ SM.13;Beveiligingstechnologie is beschermd.;Er zijn geen maatregelen.;Er is bele
 PH.01;We beveiligen ruimtes met gevoelige info.;Er is geen beleid.;Er is informeel beleid.;We hebben vast beleid.;Beleid geldt ook buiten locatie.;We plannen en rapporteren beveiliging.
 PH.02;We regelen toegang tot it-ruimtes.;Er zijn geen procedures.;Er zijn informele procedures.;We hebben vaste procedures.;We controleren toegang streng.;Toegang is geavanceerd beheerd.
 OP.01;We hebben procedures voor automatische taken.;Er zijn geen procedures.;Er zijn runbooks per afdeling.;We hebben een centraal runbook.;We rapporteren taakprestaties.;Taken zijn geautomatiseerd.
-OP.02;We hebben een back-upstrategie.;Er zijn geen procedures.;;We hebben vast beleid voor back-ups.;We testen herstel regelmatig.;Back-ups zijn deel van disasterrecovery.
+OP.02;We hebben een back-upstrategie.;Er zijn geen procedures.;Er zijn wat informele regels voor back-ups, maar die zijn niet vastgelegd of overal hetzelfde.;We hebben vast beleid voor back-ups.;We testen herstel regelmatig.;Back-ups zijn deel van disasterrecovery.
 OP.03;We beheren prestaties en capaciteit.;Er is geen beheer.;We volgen prestaties simpel.;We rapporteren prestaties.;We analyseren alles.;We voorspellen toekomstige behoeften.
 BC.01;We hebben continuïteitsplannen.;Er is geen plan.;Er is een informeel plan.;We hebben vaste plannen.;We testen plannen.;We evalueren plannen steeds.
 BC.02;We testen continuïteitsplannen.;Testen is ad hoc.;We testen jaarlijks.;We testen vast en regelmatig.;We testen alles volledig.;Testen werkt altijd goed.
