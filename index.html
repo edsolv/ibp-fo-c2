@@ -44,7 +44,7 @@
         let questions = [];
         let currentPage = 0;
         const questionsPerPage = 5;
-        let userResponses = {};
+        let userResponses = JSON.parse(localStorage.getItem('userResponses')) || {};
 
         function loadCSV(file) {
             fetch(file)
@@ -75,11 +75,11 @@
                 
                 options.forEach((opt, index) => {
                     const checked = userResponses[id] && userResponses[id].answer == index + 1 ? "checked" : "";
-                    div.innerHTML += `<label><input type='radio' name='${id}' value='${index + 1}' ${checked}> ${opt}</label><br>`;
+                    div.innerHTML += `<label><input type='radio' name='${id}' value='${index + 1}' ${checked} onchange='saveResponses()'> ${opt}</label><br>`;
                 });
                 
                 const comment = userResponses[id] ? userResponses[id].comment : "";
-                div.innerHTML += `<textarea name='comment_${id}' maxlength='300' placeholder='Opmerkingen (max 300 tekens)...' style='width: 100%; margin-top: 10px;'>${comment}</textarea>`;
+                div.innerHTML += `<textarea name='comment_${id}' maxlength='300' placeholder='Opmerkingen (max 300 tekens)...' style='width: 100%; margin-top: 10px;' oninput='saveResponses()'>${comment}</textarea>`;
                 container.appendChild(div);
             });
             
@@ -94,6 +94,7 @@
                 const comment = div.querySelector(`textarea[name='comment_${id}']`).value;
                 userResponses[id] = { answer: selected ? selected.value : null, comment };
             });
+            localStorage.setItem('userResponses', JSON.stringify(userResponses));
         }
 
         function nextPage() {
